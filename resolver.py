@@ -1,4 +1,4 @@
-from container import DIContainer
+from .container import DIContainer
 
 
 class Resolver:

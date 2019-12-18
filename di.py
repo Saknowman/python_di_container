@@ -1,5 +1,5 @@
-from container import DIContainer
-from resolver import Resolver
+from .container import DIContainer
+from .resolver import Resolver
 
 
 class DI:

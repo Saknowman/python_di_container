@@ -8,6 +8,8 @@ Then resolve class, you can get instance.
 ## DEMO
 
 ```python
+from di_container import di
+
 class Animal:
     def __init__(self, kind: str, name: str):
         self.kind = kind
@@ -22,7 +24,6 @@ class Cat(Animal):
         super().__init__('Cat', name)
 
 
-di = DI()
 di.register(Animal, Cat)
 print(di.resolve(Animal))
 # > I am Cat. My name is Cathy.

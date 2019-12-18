@@ -1,4 +1,4 @@
-from di import DI
+from .di import DI
 
 
 class Animal:
@@ -22,6 +22,9 @@ class Person:
 
     def __str__(self):
         return "I am {name}. My role is {role}.".format(name=self.name, role=self.role)
+
+
+print(Person.__init__.__annotations__)
 
 
 class Request:
